@@ -6,5 +6,6 @@ export default defineConfig({
   server: {
     hmr: false,
   },
-  resolve: { alias: { stream: "stream-browserify" } }
+  resolve: { alias: { stream: "stream-browserify" } },
+  base: './'
 })
