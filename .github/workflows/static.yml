@@ -33,7 +33,9 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - name: npm install
+      - name: npm install outer
+        run: "cd modeler && npm install"
+      - name: npm install starter
         run: "cd modeler/starter && npm install"
       - name: npm dist
         run: "cd modeler/starter && npm run build"
