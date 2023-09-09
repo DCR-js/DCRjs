@@ -36,7 +36,7 @@ jobs:
       - name: npm update
         run: "cd modeler/starter && npm update"
       - name: npm dist
-        run: "cd modeler/starter && npm build"
+        run: "cd modeler/starter && npm run build"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
